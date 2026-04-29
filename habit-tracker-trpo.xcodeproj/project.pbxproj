@@ -6,7 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7B1EF0082FA20B3500CF669B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7B1EF0072FA20B3500CF669B /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		7B1EF0072FA20B3500CF669B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7B752DB02F69AA4A002FA83F /* habit-tracker-trpo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "habit-tracker-trpo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -32,6 +37,7 @@
 		7B752DA72F69AA4A002FA83F = {
 			isa = PBXGroup;
 			children = (
+				7B1EF0072FA20B3500CF669B /* README.md */,
 				7B752DB22F69AA4A002FA83F /* habit-tracker-trpo */,
 				7B752DB12F69AA4A002FA83F /* Products */,
 			);
@@ -109,6 +115,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B1EF0082FA20B3500CF669B /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
