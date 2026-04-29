@@ -277,3 +277,17 @@ extension View {
 			.font(.body)
 	}
 }
+
+#Preview {
+	HabitDetailView(habit: Habit(
+		name: "Пробежка",
+		habitDescription: "Утренняя пробежка 30 минут",
+		colorHex: "4ADE80",
+		iconName: "figure.walk",
+		frequency: .daily,
+		reminderTime: Calendar.current.date(bySettingHour: 7, minute: 30, second: 0, of: Date())
+	))
+	.modelContainer(for: Habit.self, inMemory: true)
+}
+
+

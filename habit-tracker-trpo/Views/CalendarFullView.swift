@@ -374,3 +374,34 @@ private struct DayCell: View {
 		return Color(hex: "F87171").opacity(0.8)
 	}
 }
+
+#Preview {
+	let container: ModelContainer = {
+		let config = ModelConfiguration(isStoredInMemoryOnly: true)
+		let container = try! ModelContainer(for: Habit.self, configurations: config)
+
+		let context = container.mainContext
+
+		let habit1 = Habit(
+			name: "Спорт",
+			colorHex: "4ADE80",
+			iconName: "figure.run",
+			frequency: .daily,
+		)
+
+		let habit2 = Habit(
+			name: "Чтение",
+			colorHex: "FBBF24",
+			iconName: "book",
+			frequency: .weekdays,
+		)
+
+		context.insert(habit1)
+		context.insert(habit2)
+
+		return container
+	}()
+
+	CalendarFullView(isMenuOpen: .constant(false))
+		.modelContainer(container)
+}
